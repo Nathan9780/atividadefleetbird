@@ -1,0 +1,7 @@
+.container-card-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+}

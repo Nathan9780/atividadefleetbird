@@ -1,6 +1,6 @@
 import React from "react";
 
-function EletroDomésticos() {
+function EletroDomesticos() {
   return (
     <div>
       <h3>ELETRODOMÉSTICOS</h3>
@@ -12,4 +12,4 @@ function EletroDomésticos() {
   );
 }
 
-export default EletroDomésticos;
+export default EletroDomesticos;

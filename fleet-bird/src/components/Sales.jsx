@@ -1,6 +1,6 @@
 import React from "react";
 
-function sales() {
+function Sales() {
   return (
     <div>
       <h3>SALES</h3>
@@ -12,4 +12,4 @@ function sales() {
   );
 }
 
-export default sales;
+export default Sales;

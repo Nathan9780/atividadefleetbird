@@ -1,6 +1,6 @@
 import React from "react";
 
-function decoration() {
+function Decoration() {
   return (
     <div>
       <h3>DECORATION</h3>
@@ -12,4 +12,4 @@ function decoration() {
   );
 }
 
-export default decoration;
+export default Decoration;
