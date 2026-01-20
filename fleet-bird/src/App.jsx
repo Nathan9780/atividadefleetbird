@@ -1,12 +1,13 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import Books from "/src/components/Books.jsx";
-import Heade from "/src/components/Header.jsx";
+import Books from "./components/Books.jsx";
+import Header from "./components/Header.jsx";  // CORRIGIDO!
+
 function App() {
   return (
     <div>
-      <Heade />
+      <Header />
       <Books />
     </div>
   );
