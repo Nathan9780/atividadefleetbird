@@ -1,6 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/header.jsx";
 import Books from "./components/Books.jsx";
 import Container from "./components/container.jsx";
@@ -13,25 +11,27 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <div>
-      <header>
-        <Header />
-      </header>
+    <BrowserRouter>
+      <div>
+        <header>
+          <Header />
+        </header>
+      </div>
 
-      <main>
-        <Books />
-        <Container />
-        <Decoration />
-        <EletroDomesticos />
-        <Figure />
-        <PreOrder />
-        <Sales />
-      </main>
+      {/* Routes */}
+      <Routes>
+        <Route path="/livros" element={<Books />} />
+        <Route path="/eletrodomesticos" element={<EletroDomesticos />} />
+        <Route path="/figures" element={<Figure />} />
+        <Route path="/prevenda" element={<PreOrder />} />
+        <Route path="/promocoes" element={<Sales />} />
+        <Route path="/decoracoes" element={<Decoration />} />
+      </Routes>
 
       <footer>
         <Footer />
       </footer>
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,5 @@
 import "./../styles/header.css";
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="header">
@@ -17,30 +17,30 @@ function Header() {
         </div>
 
         <nav className="menu">
-          <a href="#inicio" className="menu-link">
-            Início
-          </a>
-          <a href="#promocoes" className="menu-link">
-            Promoções
-          </a>
-          <a href="#prevenda" className="menu-link">
-            Pré-venda
-          </a>
-          <a href="#livros" className="menu-link">
-            Livros
-          </a>
-          <a href="#decoracoes" className="menu-link">
-            Decorações
-          </a>
-          <a href="#figures" className="menu-link">
+          <Link className="menu-link" to="/inicio">
+            Home
+          </Link>
+          <Link className="menu-link" to="/promocoes">
+            Sales
+          </Link>
+          <Link className="menu-link" to="/prevenda">
+            PreOrder
+          </Link>
+          <Link className="menu-link" to="/livros">
+            Books
+          </Link>
+          <Link className="menu-link" to="/decoracoes">
+            Decorations
+          </Link>
+          <Link className="menu-link" to="/figures">
             Figures
-          </a>
-          <a href="#eletrodomesticos" className="menu-link">
-            Eletrodomésticos
-          </a>
-          <a href="#contato" className="menu-link">
-            Contato
-          </a>
+          </Link>
+          <Link className="menu-link" to="/eletrodomesticos">
+            Eletrodomesticos
+          </Link>
+          <Link className="menu-link" to="/contato">
+            Contact{" "}
+          </Link>
         </nav>
 
         <div className="user-icons">

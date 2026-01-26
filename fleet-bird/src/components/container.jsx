@@ -3,9 +3,9 @@ import CardProduct from "./CardProduct";
 import "../styles/global.css";
 function Container() {
   return (
-    <div className="container-card-product">
+    <section className="container-card-product">
       <CardProduct />
-    </div>
+    </section>
   );
 }
 
